@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: Onest, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #1A1A1A;
+    background-color: #fff;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    max-height: 100%;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1, h2,h3, p {
+    margin: 0;
+}
+fieldset{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.ts-dropdown, .ts-control, .ts-control input {
+    font-size: 18px;
+    line-height: 1.4;
+    border-radius: 8px;
+    background: #fff;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 16px 8px;
+}
+.dropdown.single{
+    
+}
+.dropdown-active .ts-control {
+    border-radius: 8px;
+}
+.ts-dropdown .active{
+    background-color: transparent;
+}
+
+.ts-wrapper.single .ts-control{
+    background: #fff;
+}
+.ts-wrapper.single .ts-control::after{
+    border-color: #1a1a1a transparent transparent transparent;
+}
+
+.ts-wrapper.single.dropdown-active  .ts-control::after{
+    border-color:  transparent transparent #1a1a1a transparent;
+}
